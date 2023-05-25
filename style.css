@@ -131,13 +131,13 @@ li:nth-child(3n - 1)::marker {
 
 
 #h1{
-	 background-image: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
+	 background-image: linear-gradient(to right, rgb(74, 211, 83), rgb(0, 56, 224));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 span {
-	 background-image: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
+	 background-image: linear-gradient(to right, rgb(74, 211, 83), rgb(0, 56, 224));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
