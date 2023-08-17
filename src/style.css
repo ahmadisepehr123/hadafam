@@ -1,0 +1,454 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@700&family=Nabla&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@700&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.tick{
+  border: 0;
+}
+
+.tick:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+.div-tick{
+  text-align: end;
+}
+body{
+	margin:0;
+	padding:0;
+    font-family: 'Noto Sans Arabic', sans-serif;
+	background-color: rgb(246, 245, 245) ;	
+}
+.todo-nav {
+    margin-top: 10px
+}
+
+.todo-list {
+    margin: 10px 0;
+}
+.todo-item{
+  list-style-type: "\1F44D";
+}
+.todo-list .todo-item {
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 0;
+    background: #f7f7f7;
+}
+
+.todo-list.only-active .todo-item.complete {
+    display: none
+}
+
+.todo-list.only-active .todo-item:not(.complete) {
+    display: block
+}
+
+.todo-list.only-complete .todo-item:not(.complete) {
+    display: none
+}
+
+.todo-list.only-complete .todo-item.complete {
+    display: block;
+}
+
+.todo-list .todo-item.complete span {
+    text-decoration: line-through
+}
+
+.remove-todo-item {
+    color: #ccc;
+    visibility: hidden
+}
+
+.remove-todo-item:hover {
+    color: #5f5f5f
+}
+
+.todo-item:hover .remove-todo-item {
+    visibility: visible
+}
+
+div.checker {
+    width: 18px;
+    height: 18px
+}
+
+div.checker input,
+div.checker span {
+    width: 18px;
+    height: 18px
+}
+
+div.checker span {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    text-align: center;
+    background-position: 0 -260px;
+}
+
+div.checker, div.checker input, div.checker span {
+    width: 19px;
+    height: 19px;
+}
+
+div.checker, div.radio, div.uploader {
+    position: relative;
+}
+
+div.button, div.button *, div.checker, div.checker *, div.radio, div.radio *, div.selector, div.selector *, div.uploader, div.uploader * {
+    margin: 0;
+    padding: 0;
+}
+
+div.button, div.checker, div.radio, div.selector, div.uploader {
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.card {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: initial;
+    background: #fff;
+    border-radius: 38px;
+    box-shadow:  23px 23px 91px #b6b6b6,
+             -23px -23px 91px #ffffff;
+}
+.container{
+    margin-top: 20px;
+}
+
+#div-img{
+    text-align: center;
+}
+#img{
+    height: auto;
+}
+@media (max-width: 480px) {
+    img {
+      width: 400px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 500px;
+    }
+  }
+  .checkbox{
+    cursor: pointer;
+  }
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+    border-radius: 5px;
+    margin-bottom: -10px;
+}
+[data-title]:after {
+    content: attr(data-title);
+    font-size: 100%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 5px;
+    margin-bottom: -10px;
+}
+[data-title] {
+    position: relative;
+}
+
+
+#h1{
+    margin-top: 20px;
+	text-align: center;
+	font-family: 'Noto Sans Arabic', sans-serif;
+   
+}
+
+.prompt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+
+  .prompt-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .prompt-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+  }
+
+  .prompt-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .prompt-button:hover {
+    background-color: #45a049;
+    scale: 1.1;
+    transition: 0.5s;
+  }
+  #button{
+    margin-top: 20px;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+  }
+  
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px #00000027;
+  }
+  
+  .social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+  }
+  
+  .social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+  }
+  
+  .github {
+    background-color: #333;
+  }
+  
+  .github svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+  }
+  
+  .github:hover svg {
+    fill: #333;
+  }
+  
+  .linkedin {
+    background-color: #0077b5;
+  }
+  
+  .linkedin svg {
+    fill: #f2f2f2;
+  }
+  
+  .linkedin:hover svg {
+    fill: #0077b5;
+  }
+  
+  .instagram {
+    background-color: #c13584;
+  }
+  
+  .instagram svg {
+    fill: #f2f2f2;
+  }
+  
+  .instagram:hover svg {
+    fill: #c13584;
+  }
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  section {
+      padding: 60px 0;
+  }
+  
+  section .section-title {
+      text-align: center;
+      color:  #14a483;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+  }
+  #footer {
+      background: #14a483 !important;
+  }
+  #footer h5{
+      padding-left: 10px;
+      border-left: 3px solid #eeeeee;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color:#ffffff;
+  }
+  #footer a {
+      color: #ffffff;
+      text-decoration: none !important;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+  }
+  
+  @media (max-width:767px){
+      #footer h5 {
+      padding-left: 0;
+      border-left: transparent;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+  }
+  }
+    .connection{
+        margin-left: 20px;
+    }
+
+    .loader {
+      --col1: rgba(228, 19, 141, 0.925);
+      --col2: rgb(255, 179, 80);
+      font-size: 2em;
+      font-weight: 600;
+      perspective: 800px;
+      position: relative;
+      text-align: center;
+    }
+    
+    .loader::after,
+    .loader::before,
+    .loader .text::after,
+    .loader .text::before {
+      perspective: 800px;
+      animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;
+      ;
+      content: '●';
+      color: var(--col1);
+      position: absolute;
+      translate: -60px 500px;
+      width: 5px;
+      height: 5px;
+    }
+    .loader .h1-dude::after,
+    .loader .h1-dude::before {
+      perspective: 800px;
+      animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;
+      ;
+      content: '●';
+      color: var(--col1);
+      position: absolute;
+      translate: -60px 500px;
+      width: 5px;
+      height: 5px;
+    }
+    
+    .loader::before {
+      animation-delay: 3s;
+      color: var(--col1);
+    }
+    
+    .loader .text::before {
+      color: var(--col2);
+      animation-delay: 2s;
+    }
+    .loader .h1-dude::before {
+      color: var(--col2);
+      animation-delay: 2s;
+    }
+    .loader .text::after {
+      color: var(--col2);
+    }
+    .loader .h1-dude::after {
+      color: var(--col2);
+    }
+    .loader .text {
+      animation: anim 20s linear infinite, move 10s linear infinite 1s;
+      color: transparent;
+      background-image: linear-gradient(90deg, 
+      var(--col1) 0%,
+      var(--col2) 100%);
+      background-clip: text;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transform: skew(5deg, -5deg);
+      -webkit-background-clip: text;
+      position: relative;
+    }
+    .loader .h1-dude {
+      animation: anim 20s linear infinite, move 10s linear infinite 1s;
+      color: transparent;
+      background-image: linear-gradient(90deg, 
+      var(--col1) 0%,
+      var(--col2) 100%);
+      background-clip: text;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transform: skew(5deg, -5deg);
+      -webkit-background-clip: text;
+      position: relative;
+    }
+    @keyframes anim {
+      0%, 100% {
+        text-shadow: 2px 0px 2px rgba(179, 158, 158, .5);
+      }
+    
+      50% {
+        background-size: 0%;
+        background-position-x: left;
+        text-shadow: 2px 10px 6px rgba(179, 158, 158, 1);
+      }
+    }
+    
+    @keyframes move {
+      50% {
+        translate: 0px 0px;
+        rotate: x 60deg;
+        transform: skew(-5deg, 5deg);
+      }
+    }
+    
+    @keyframes dotMove {
+      0%, 100% {
+        translate: -60px 300px;
+      }
+    
+      50% {
+        translate: 160px -250px;
+        scale: .5;
+        opacity: .85;
+      }
+    }
+    
+    .div-close{
+      text-align:right;
+      margin-bottom: 2px;
+    }
+
+    
