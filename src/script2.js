@@ -345,5 +345,3 @@ document.addEventListener('DOMContentLoaded', function() {
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
-
-
