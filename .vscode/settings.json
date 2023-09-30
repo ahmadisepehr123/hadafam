@@ -1,7 +1,7 @@
 {
     "workbench.colorCustomizations": {
         "[Material Theme Darker]": {
-            "activityBarBadge.background": "#006aff",
+            "activityBarBadge.background": "#00BCD4",
             "activityBar.activeBorder": "#00BCD4",
             "list.activeSelectionForeground": "#00BCD4",
             "list.inactiveSelectionForeground": "#00BCD4",
@@ -25,8 +25,8 @@
             "selection.background": "#00BCD440",
             "statusBarItem.remoteBackground": "#00BCD4"
         },
-        "activityBar.background": "#230D91",
-        "titleBar.activeBackground": "#3013CB",
-        "titleBar.activeForeground": "#FCFBFF"
+        "activityBar.background": "#143232",
+        "titleBar.activeBackground": "#1C4646",
+        "titleBar.activeForeground": "#F6FBFB"
     }
 }
